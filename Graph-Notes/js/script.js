@@ -65,27 +65,30 @@ document.addEventListener('DOMContentLoaded', () =>{
     });
 
     const EditNotes = document.querySelectorAll("#Edit");
-    EditNotes.forEach((EditNote) => {
-        EditNote.addEventListener('click', () => {
-            changeContent('<i class="fas fa-pencil-alt"></i> Editar Notas');
-            const NumNote = document.getElementById("Numero").textContent;
-            ShowInfo(createNotes);
-            editarNota(NumNote);
-            const UpdateButton = document.querySelector('.update-button');
-            const CancelButton = document.querySelector('.cancel-button');
-            UpdateButton.addEventListener('click', () => {
-                actualizarNota(NumNote);
-            });
-            CancelButton.addEventListener('click', () => {
-                location.href = 'index.html';
-            });
+EditNotes.forEach((EditNote) => {
+    EditNote.addEventListener('click', () => {
+        const NumNote = EditNote.getAttribute("data-nota");
+        console.log(NumNote);
+        changeContent('<i class="fas fa-pencil-alt"></i> Editar Notas');
+        ShowInfo(createNotes);
+        editarNota(NumNote);
+        const UpdateButton = document.querySelector('.update-button');
+        const CancelButton = document.querySelector('.cancel-button');
+        UpdateButton.addEventListener('click', () => {
+            actualizarNota(NumNote);
+        });
+        CancelButton.addEventListener('click', () => {
+            location.href = 'index.html';
         });
     });
+});
+
 
     const deleteButtons = document.querySelectorAll("#delete");
     deleteButtons.forEach((deleteButton) => {
         deleteButton.addEventListener('click', () => {
-            const NumNote = document.getElementById("Numero").textContent;
+            // const NumNote = document.getElementById("Numero").textContent;
+            const NumNote = deleteButton.getAttribute("data-nota");
             eliminarNota(NumNote);
         });
     });
