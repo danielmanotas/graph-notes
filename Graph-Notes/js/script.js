@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const crearNotaLink = document.getElementById('crearNota');
     crearNotaLink.addEventListener('click', () => {
             changeContent('<i class="fas fa-pencil-alt"></i> Crear Notas');
-            closeNav();
+            // closeNav();
             ShowInfo(createNotes);
             const saveNote = document.querySelector('#save-button');
             agregarEtiquetasDatalist();
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const VerNotaLink = document.getElementById('verNota');
     VerNotaLink.addEventListener('click', () => {
             changeContent('<i class="fas fa-eye"></i> Ver Notas');
-            closeNav();
+            // closeNav();
             ShowInfo(viewNotes);
             MostrarNotas(user);
     });
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const grafosLink = document.getElementById('grafos');
     grafosLink.addEventListener('click', () => {
         changeContent('<i class="fas fa-project-diagram"></i> Grafos');
-        closeNav();
+        // closeNav();
         ShowInfo(graph);
         actualizarGrafo();
     });
