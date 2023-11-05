@@ -1,0 +1,3 @@
+#GRAPH NOTES
+
+*En la era de la información, la necesidad de organizar y relacionar datos y conceptos se ha vuelto fundamental. La cantidad abrumadora de información a la que estamos expuestos en el mundo actual ya sea en el ámbito educativo, laboral o personal, requiere herramientas efectivas para la gestión y comprensión. En este contexto, presentamos nuestra aplicación web, GraphNote, que aborda este desafío al combinar notas con la teoría de grafos. GraphNote se concibe como una solución innovadora que ofrece a los usuarios una forma avanzada de organizar, analizar y visualizar información a través de la representación de datos en estructuras de grafos.*
