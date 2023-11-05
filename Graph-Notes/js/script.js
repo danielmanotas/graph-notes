@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             changeContent('<i class="fas fa-eye"></i> Ver Notas');
             closeNav();
             // ShowInfo(viewNotes);
-            location.href = 'index.html';
+            location.reload();
             MostrarNotas(user);
     });
 
