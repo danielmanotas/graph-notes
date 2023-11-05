@@ -1,8 +1,8 @@
-@import url("create-notes.css");
-@import url("sidebar.css");
-@import url("view-notes.css");
-@import url("styles-graph.css");
-@import url("popup.css");
+@import url("/Graph-Notes/css/create-notes.css");
+@import url("/Graph-Notes/css/sidebar.css");
+@import url("/Graph-Notes/css/view-notes.css");
+@import url("/Graph-Notes/css/styles-graph.css");
+@import url("/Graph-Notes/css/popup.css");
 
 body {
     font-family: Arial, sans-serif;
