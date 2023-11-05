@@ -84,23 +84,20 @@ a:hover {
 }
 
 
+@media screen and (max-width: 775px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
-@media screen and (width < 975px) {
     .title-form {
         background: linear-gradient(to right, #fff 10%, #000 100%);
         /* color: #fff; */
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-}
-
-@media screen and (width < 975px) {
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 
     .login-container {
