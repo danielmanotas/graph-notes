@@ -1,0 +1,67 @@
+.main-content {
+    background-color: #000;
+    height: 100vh;
+}
+
+#notas-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#notas-list li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#notaCardTitle {
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#descrip{
+    display: none;
+}
+
+#notaCardTags {
+    color: #3498db;
+}
+
+.notaCardButton {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    /* margin: 10px; */
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.notaCardButton:hover {
+    background-color: #2980b9;
+}
+
+.notaCardButton:active {
+    background-color: #2074a0;
+}
+
+#NotaAlert{
+    display: none;
+}
+
+@media screen and (width < 975px) {
+    #notas-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

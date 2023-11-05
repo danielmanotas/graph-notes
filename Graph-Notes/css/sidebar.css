@@ -1,0 +1,54 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    overflow-x: hidden;
+    transition: 0.1s;
+    z-index: 1;
+}
+
+.sidebar a {
+    padding: 25px 27px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-left: 0;
+    padding: 50px 0 0 30px;
+}
+
+.subContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 1px 10px 10px 0;
+  padding: 10px 0 0 0;
+}
+
+#openNav {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 35px;
+}

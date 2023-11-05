@@ -1,0 +1,13 @@
+@import url("create-notes.css");
+@import url("sidebar.css");
+@import url("view-notes.css");
+@import url("styles-graph.css");
+@import url("popup.css");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
