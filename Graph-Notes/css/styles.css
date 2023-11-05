@@ -1,8 +1,8 @@
-@import url("/graph-notes/Graph-Notes/css/create-notes.css");
-@import url("/graph-notes/Graph-Notes/css/sidebar.css");
-@import url("/graph-notes/Graph-Notes/css/view-notes.css");
-@import url("/graph-notes/Graph-Notes/css/styles-graph.css");
-@import url("/graph-notes/Graph-Notes/css/popup.css");
+@import url("/Graph-Notes/css/create-notes.css");
+@import url("/Graph-Notes/css/sidebar.css");
+@import url("/Graph-Notes/css/view-notes.css");
+@import url("/Graph-Notes/css/styles-graph.css");
+@import url("/Graph-Notes/css/popup.css");
 
 body {
     font-family: Arial, sans-serif;
@@ -11,3 +11,8 @@ body {
     background-color: #f4f4f4;
 }
 
+@media screen and (max-width: 775px) {
+    .location-app{
+        font-size: 1.5rem;
+    }
+}

@@ -19,7 +19,7 @@ export const closeNav = () => {
 export const changeContent = (contenido) =>{
     const contentDiv = document.querySelector('.content');
     contentDiv.innerHTML = '';
-    contentDiv.innerHTML = `<h1>${contenido}</h1>`;
+    contentDiv.innerHTML = `<h1 class="location-app">${contenido}</h1>`;
 }
 
 export const ShowInfo = (Info) =>{
@@ -37,9 +37,9 @@ export function guardarNota(user) {
     let suma = 0;
     for (let note of notas) {
         let numero = note.seq;
-        suma += numero;
+        suma = numero + 1;
     };
-    const seq = suma;    
+    const seq = suma;
     const titulo = tituloInput.value;
     const contenido = contenidoInput.value;
     const etiquetasArray = etiquetasInput.value.split(',').map(etiqueta => etiqueta.trim());
