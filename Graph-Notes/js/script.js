@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     openNavDiv.addEventListener('click', openNav);
 
     const ContentInicial = document.querySelector('.subContent');
+    ContentInicial.innerHTML = '';
     changeContent('<i class="fas fa-eye"></i> Ver Notas');
     ContentInicial.innerHTML = viewNotes;
     MostrarNotas(user);
