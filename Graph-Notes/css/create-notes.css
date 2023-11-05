@@ -81,3 +81,9 @@ ul{
 #Numero{
   display: none;
 }
+
+@media screen and (width < 975px) {
+    #notas-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

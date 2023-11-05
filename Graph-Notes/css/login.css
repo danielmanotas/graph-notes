@@ -10,12 +10,11 @@ body {
 
 .login-container {
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px; 
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     padding: 4%;
     text-align: center;
-    max-width: 400px;
-    /* margin: 0 auto; */
+    max-width: 50vw;
     transform: translateY(-20px);
     transition: transform 0.3s ease;
 }
@@ -24,7 +23,7 @@ body {
     transform: translateY(0);
 }
 
-i{
+i {
     font-size: 4rem;
 }
 
@@ -37,7 +36,8 @@ h1 {
     padding: 5%;
     font-size: 25px;
 }
-h2{
+
+h2 {
     font-weight: bold;
 }
 
@@ -84,4 +84,19 @@ a:hover {
 #error-message {
     color: red;
     font-weight: bold;
+}
+
+/* Reglas de medios para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .login-container {
+        max-width: 90vw;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 70%;
+    }
 }
