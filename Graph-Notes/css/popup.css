@@ -7,6 +7,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
+  overflow: auto;
 }
 
 #NotaAlert {
@@ -25,12 +26,15 @@
   border-radius: 10px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   width: 50vw;
+  max-width: 90%; /* Nuevo */
   height: 50vh;
+  max-height: 90vh; /* Nuevo */
   opacity: 0;
   transform: scale(0.7);
   transition: opacity 0.3s, transform 0.3s;
   font-size: 19px;
   z-index: -2;
+  overflow: auto; /* Nuevo */
 }
 
 #notaAlertContent {
@@ -53,58 +57,48 @@
   background-color: #c0392b;
 }
 
-.title{
+.title {
   font-size: 2rem;
   font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap; /* Nuevo */
 }
 
-.content{
+.content {
   font-size: 1rem;
   font-weight: bold;
   overflow: hidden;
-  overflow-y: scroll;
   text-overflow: ellipsis;
+  white-space: nowrap; /* Nuevo */
 }
 
-.Tags{
+.Tags {
   font-size: 0.88rem;
   font-weight: bold;
   color: #2074a0;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap; /* Nuevo */
 }
 
-
 @media screen and (max-width: 775px) {
-
   #NotaAlert {
-      width: 90vw;
-      height: 50vh;
+    width: 90vw;
+    max-width: 90%; /* Nuevo */
+    height: 50vh;
+    max-height: 90vh; /* Nuevo */
   }
 
-  .title{
+  .title {
     font-size: 0.90rem;
-    font-weight: bold;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .content{
-    font-size: 0.88rem;
-    font-weight: bold;
-    overflow: hidden;
-    overflow-y: scroll;
-    text-overflow: ellipsis;
-  }
-  
-  .Tags{
-    font-size: 0.86rem;
-    font-weight: bold;
-    color: #2074a0;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
+  .content {
+    font-size: 0.88rem;
+  }
+
+  .Tags {
+    font-size: 0.86rem;
+  }
 }
