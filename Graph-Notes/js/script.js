@@ -91,7 +91,8 @@ EditNotes.forEach((EditNote) => {
         deleteButton.addEventListener('click', () => {
             // const NumNote = document.getElementById("Numero").textContent;
             const NumNote = deleteButton.getAttribute("data-nota");
-            eliminarNota(NumNote);
+            console.log(NumNote)
+           // eliminarNota(NumNote);
         });
     });
     
