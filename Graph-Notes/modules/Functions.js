@@ -68,11 +68,10 @@ export function MostrarNotas(user) {
         card.className = 'nota-card';
 
         card.innerHTML = `
-                <div id="Numero">${nota.seq}</div>
                 <div id="notaCardTitle">${nota.titulo}</div>
-                <div id="descrip">${nota.contenido}</div>
                 <div id="notaCardTags">Etiquetas: ${nota.etiquetas.join(', ')}</div>
-                <button id="VerNota" class="notaCardButton"><i class="far fa-eye"></i></button>
+                <button id="VerNota" class="notaCardButton" data-title="${nota.titulo}" data-descript="${nota.contenido}" data-tags="${nota.etiquetas.join(', ')}"><i class="far fa-eye"></i></button>
+                
                 <button id="Edit" class="notaCardButton" data-nota="${nota.seq}"><i class="fas fa-edit"></i></button>
                 <button id="delete" class="notaCardButton" data-nota="${nota.seq}"><i class="fas fa-trash-alt"></i></button>
         `;

@@ -97,14 +97,18 @@ EditNotes.forEach((EditNote) => {
     });
     
         const ViewNote = document.querySelectorAll("#VerNota");
-        ViewNote.forEach((ViewButton, index) => {
+        ViewNote.forEach((ViewButton) => {
             ViewButton.addEventListener('click', () => {
                 
-                const ContenidoNote = document.querySelectorAll(".nota-card")[index];
-                const Titulo = ContenidoNote.querySelector("#notaCardTitle").textContent;
+                // const ContenidoNote = document.querySelectorAll(".nota-card")[index];
+                /*const Titulo = ContenidoNote.querySelector("#notaCardTitle").textContent;
                 const Descripcion = ContenidoNote.querySelector("#descrip").textContent;
-                const Tags = ContenidoNote.querySelector("#notaCardTags").textContent;
+                const Tags = ContenidoNote.querySelector("#notaCardTags").textContent;*/
 
+                const Titulo = ViewButton.getAttribute("data-title");
+                const Descripcion = ViewButton.getAttribute("data-descript");
+                const Tags = ViewButton.getAttribute("data-tags");
+                
                 const notaAlert = document.getElementById("NotaAlert");
                 const fondoOscuro = document.getElementById("FondoOscuro");
                 notaAlert.style.zIndex = 2;
