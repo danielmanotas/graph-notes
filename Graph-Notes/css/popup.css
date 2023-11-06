@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
+  text-align: center;
   padding: 5%;
   top: 50%;
   left: 50%;
@@ -23,9 +24,8 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-  z-index: 3;
-  width: 40vw;
-  height: 40vh;
+  width: 50vw;
+  height: 50vh;
   opacity: 0;
   transform: scale(0.7);
   transition: opacity 0.3s, transform 0.3s;
@@ -56,15 +56,53 @@
 .title{
   font-size: 2rem;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content{
   font-size: 1rem;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .Tags{
   font-size: 0.88rem;
   font-weight: bold;
   color: #2074a0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media screen and (max-width: 775px) {
+
+  #NotaAlert {
+      width: 50vw;
+      height: 50vh;
+  }
+
+  .title{
+    font-size: 0.90rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .content{
+    font-size: 0.88rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .Tags{
+    font-size: 0.86rem;
+    font-weight: bold;
+    color: #2074a0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
 }

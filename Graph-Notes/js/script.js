@@ -92,7 +92,7 @@ EditNotes.forEach((EditNote) => {
             // const NumNote = document.getElementById("Numero").textContent;
             const NumNote = deleteButton.getAttribute("data-nota");
             console.log(NumNote)
-           // eliminarNota(NumNote);
+           eliminarNota(NumNote);
         });
     });
     
