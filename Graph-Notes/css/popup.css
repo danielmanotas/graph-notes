@@ -64,6 +64,7 @@
   font-size: 1rem;
   font-weight: bold;
   overflow: hidden;
+  overflow-y: scroll;
   text-overflow: ellipsis;
 }
 
@@ -94,6 +95,7 @@
     font-size: 0.88rem;
     font-weight: bold;
     overflow: hidden;
+    overflow-y: scroll;
     text-overflow: ellipsis;
   }
   
