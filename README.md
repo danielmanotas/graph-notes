@@ -2,7 +2,7 @@
 
 **Organiza tus apuntes y descubre cómo se relacionan mediante un grafo.**
 
-Proyecto universitario de Daniel Manotas, construido con HTML, CSS y JavaScript. Cada nota es un vértice y dos notas se conectan si comparten al menos una etiqueta.
+Proyecto universitario, construido con HTML, CSS y JavaScript. Cada nota es un vértice y dos notas se conectan si comparten al menos una etiqueta.
 
 ## Funcionalidades
 
