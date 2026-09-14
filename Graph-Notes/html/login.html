@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../css/login.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.svg" type="image/x-icon">
+    <title>Graph Notes</title>
+  </head>
+  <body>
+
+    <div class="login-container">
+      <i class="fas fa-project-diagram"></i>
+      <h1 class="title-form">Graph Notes</h1>
+        <form id="login-form">
+          <span class="text-initial">Iniciar sesión</span>
+            <input type="text" id="username" aria-label="Usuario" autocomplete="username" placeholder="Usuario" required>
+            <input type="password" id="password" aria-label="Contraseña" autocomplete="current-password" placeholder="Contraseña" required>
+            <button type="submit" id="login">Iniciar sesión</button>
+            <a href="../html/registro.html">Registrarse</a>
+        </form>
+        <p id="error-message" role="alert"></p>
+    </div>
+
+    <script src="../js/login-user.js" type="module"></script>
+
+</body>
+</html>
