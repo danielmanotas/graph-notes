@@ -2,7 +2,7 @@
 
 **Organiza tus apuntes y descubre cómo se relacionan mediante un grafo.**
 
-Proyecto universitario de Daniel Manotas, construido con HTML, CSS y JavaScript. Cada nota es un vértice y dos notas se conectan si comparten al menos una etiqueta.
+Proyecto universitario, construido con HTML, CSS y JavaScript. Cada nota es un vértice y dos notas se conectan si comparten al menos una etiqueta.
 
 ## Funcionalidades
 
@@ -99,37 +99,6 @@ Se mantiene el formato original de las notas:
 ```
 
 Los errores de JSON o de escritura se muestran sin reemplazar automáticamente los datos. Antes de restaurar datos dañados, conserva una copia de las claves originales. No se ofrece edición simultánea coordinada entre pestañas.
-
-## Pruebas
-
-```bash
-npm test
-```
-
-Las pruebas verifican edición tras borrado, aislamiento de operaciones por usuario, identificadores, validación, normalización de etiquetas, títulos repetidos, aristas únicas y equivalencia con un algoritmo de referencia. No requieren acceso a Internet.
-
-En entornos que bloqueen subprocesos, puedes ejecutar:
-
-```bash
-node --test --test-isolation=none
-```
-
-Comprobación manual recomendada: registrar un usuario ficticio, entrar con Enter, crear dos notas con el mismo título, abrirlas, editar una, borrar la otra y alternar entre notas y grafo. Introducir `<b>texto</b>` debe mostrar texto literal.
-
-## GitHub Pages
-
-La aplicación puede servirse como sitio estático. Si Pages publica la raíz de `main`, la entrada es:
-
-`https://danielmanotas.github.io/graph-notes-mejorado/Graph-Notes/html/login.html`
-
-Las rutas de recursos son relativas y funcionan tanto en subdirectorios como en el servidor local. La disponibilidad del sitio depende de la configuración de Pages del repositorio.
-
-## Próximos pasos
-
-- Backend con autenticación real y contraseñas almacenadas mediante hash seguro en el servidor.
-- Exportar e importar notas para copias de seguridad.
-- Búsqueda de texto y filtros por etiqueta.
-- Pruebas automatizadas de navegador y mejoras para grafos muy grandes.
 
 ## Autoría y licencia
 
