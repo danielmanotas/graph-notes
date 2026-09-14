@@ -1,0 +1,8 @@
+#grafo-container {
+    background-color: #000;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+}
