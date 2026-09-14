@@ -1,0 +1,19 @@
+#NotaAlert {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 2rem;
+  width: min(90vw, 760px);
+  max-height: 85vh;
+  overflow: auto;
+  overflow-wrap: anywhere;
+}
+#NotaAlert::backdrop { background: rgb(0 0 0 / 60%); }
+#NotaAlert .note-body { white-space: pre-wrap; line-height: 1.6; }
+.cerrarNotaButton {
+  background: #b92920;
+  color: white;
+  border: 0;
+  padding: .8rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
