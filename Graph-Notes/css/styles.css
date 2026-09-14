@@ -1,0 +1,35 @@
+@import url("./create-notes.css");
+@import url("./sidebar.css");
+@import url("./view-notes.css");
+@import url("./styles-graph.css");
+@import url("./popup.css");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 775px) {
+    .location-app{
+        font-size: 1.5rem;
+    }
+}
+* { box-sizing: border-box; }
+#app-message { color: #a01818; margin: 1rem 2rem; }
+.subContent { margin: 0; padding: 1rem; }
+.main-content { width: 100%; height: auto; min-height: 65vh; border-radius: 8px; overflow: auto; }
+.notaCardTitle { font-size: 1.15rem; overflow-wrap: anywhere; }
+.notaCardTags { color: #236495; white-space: normal; overflow-wrap: anywhere; }
+.notaCardButton { margin-right: .5rem; }
+.graph-view { width: 100%; }
+#grafo-container { width: 100%; height: 70vh; color: white; padding: 1rem; }
+.form-container input, .form-container textarea { font: inherit; }
+button:focus-visible, a:focus-visible { outline: 3px solid #e6a500; outline-offset: 3px; }
+#openNav { border: 0; background: white; border-radius: 4px; z-index: 2; }
+.sidebar { padding-top: 65px; }
+@media (max-width: 775px) {
+  .side-bar { padding: 1.25rem; }
+  .main-content { padding: 1rem; }
+}
