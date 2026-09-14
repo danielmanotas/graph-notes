@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../css/register.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.svg" type="image/x-icon">
+      <title>Registro | Graph Notes</title>
+  </head>
+  <body>
+
+    <div class="login-container">
+      <i class="fas fa-project-diagram"></i>
+      <h1 class="title-form">Graph Notes</h1>
+        <h2 class="text-initial">Registrarse</h2>
+        <form id="login-form">
+            <input type="text" id="Name" aria-label="Nombre" autocomplete="given-name" placeholder="Nombre" required>
+            <input type="text" id="lastname" aria-label="Apellido" autocomplete="family-name" placeholder="Apellido" required>
+            <input type="text" id="username" aria-label="Usuario" autocomplete="username" placeholder="Username" required>
+            <input type="password" id="password" aria-label="Contraseña" autocomplete="new-password" placeholder="Contraseña" required>
+            <button type="submit" id="register">Registrarse</button>
+            <a href="../html/login.html">Iniciar Sesión</a>
+        </form>
+        <p id="error-message" role="alert"></p>
+    </div>
+    <script src="../js/register-user.js" type="module"></script>
+
+</body>
+</html>
